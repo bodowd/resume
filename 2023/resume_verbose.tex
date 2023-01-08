@@ -1,0 +1,233 @@
+\documentclass[letterpaper,hidelinks,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1in}
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemPoint}[2]{
+  \item\small{
+	{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\projectSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     {\textbf{\Huge Bing O'Dowd}} & \faGithub \href{https://github.com/bodowd/}{ bodowd} \\ \href{mailto:odowd.bing@gmail.com}{odowd.bing@gmail.com} &  \faLinkedinSquare \href{https://www.linkedin.com/in/bingodowd}{ bingodowd}
+% \end{tabular*}
+
+\centering \textbf{\huge Bing O'Dowd} 
+
+Software Engineer - odowd.bing@gmail.com - \faLinkedinSquare { bingodowd} - \faGithub { bodowd}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+  \resumeSubheading
+ {Bayer AG}{Remote, Germany}
+ {Software Engineer}{April 2022 - Present}
+   \resumeItemListStart
+
+    \resumeItemPoint{}{\textbf{Built and maintained two internal applications} 
+    for small molecules research and development using Typescript, Terraform, 
+    AWS Lambda, Postgres, AWS AppSync, GraphQL, and React on a four person 
+    team, performing code reviews, pair programming and using agile methodology}
+    \resumeItemPoint{}{\textbf{Established automated testing workflows and shared 
+    knowledge:} improved developer velocity and confidence by building front 
+    end tests, local integration tests, and end-to-end
+    tests, and shared practices with other software development teams}
+    \resumeItemPoint{}{\textbf{Developed features which return the lineage 
+    of a molecule} by casting the problem as a graph and applying a breadth 
+    first traversal to the graph to provide the user with the lineage of a 
+    molecule of interest}
+    
+  \resumeItemListEnd  
+  
+  
+  
+  \resumeSubheading
+ {Bayer AG}{Monheim am Rhein, Germany}
+ {Data Scientist}{October 2020 - April 2022}
+   \resumeItemListStart
+
+    \resumeItemPoint{}{\textbf{Analyzed experimental data and built machine 
+    learning models} to support small molecule research process}
+    \resumeItemPoint{}{\textbf{Lead development on API to track machine learning predictions} across iterative rounds of active learning, by using SQLite, FastAPI, Docker, and Pytest, which is used by internal data scientists across 4 projects}
+    \resumeItemPoint{}{\textbf{Received performance award for leading analysis
+    and development of dashboard:} identified previously untracked effects across
+    \> 20,000 biological tests, and built dashboard to visualize results with
+    Python, Streamlit, and AWS (EC2, S3, Docker, and ECR)}
+   	\resumeItemPoint{}
+  		{\textbf{Led analysis and built machine learning models}, one example being a Random Forest model for chemical projects, classifying desirable molecules at {\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}70\% accuracy and ~93\% recall compared to the baseline of manual selection of compounds which yielded {\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}30\% accuracy}
+	\resumeItemPoint{}{\textbf{Lead developer of internal tools} implemented from the literature -- Conformal Predictors and Random Matrix Discriminant}
+   \resumeItemPoint{}{\textbf{Pioneered use of active learning} by leading and persuading chemical project leaders to pursue active learning as a strategy for using machine learning prediction outputs}
+  \resumeItemListEnd
+
+ \resumeSubheading
+ {Bayer AG}{Monheim am Rhein, Germany}
+ {PostDoc}{October 2018 - October 2020}
+  \resumeItemListStart
+  	\resumeItemPoint{}
+	{\textbf{Researched, developed, and published work} on a variational autoencoder model for modeling molecular properties and generating chemical structures (https://chemrxiv.org/articles/preprint/7977131/2)}
+	\resumeItemPoint{}
+	{\textbf{Jointly developed and maintained} a variational autoencoder in Python and PyTorch in a 3-person team, and also applied the model in active chemical discovery projects}
+	\resumeItemPoint{}
+		{\textbf{Co-inventor on patent application} for novel molecules by using a generative model and assisting in the selection of ideas for synthesis and testing and later confirmed to be novel and of interest – “Novel heteroaryl-substituted pyrazine derivates as pesticides" (pending)}
+  \resumeItemListEnd
+
+   \resumeSubheading
+      {Dow AgroSciences }{Champaign, IL, USA}
+      {Software Engineering Intern}{March - August 2017}
+      \resumeItemListStart
+        \resumeItemPoint{}
+          {\textbf{Led refactoring and further development} of data cleaning pipeline to speed up data ingestion process, from annual and manual updates, to weekly and automated updates}
+        \resumeItemPoint{}
+          {\textbf{Sped up 3D similarity searches} by automating 3D molecular similarity searches by building one interface to three separate programs, and used Python's multiprocessor library, making a week-long manual process run in $<$ 4 hours}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {University of Illinois at Urbana-Champaign }{Champaign, IL, USA}
+        {Research Assistant}{August 2013 - May 2018}
+        \resumeItemListStart
+          \resumeItem{Introduced Machine Learning for chemical research to the lab and used ML to direct synthetic efforts}
+            {Ruled out 31\% of possible molecules to synthesize using PCA and a generalized linear model to prioritize chemistry efforts and reduce time (ca. 6mo-1yr) and financial costs }
+          \resumeItem{Published work in academic journals}
+            {Discovered new a class of bacterial enzyme as an antimicrobial drug target, characterized novel inhibitor activity, and demonstrated previously unknown mechanism of action of bisphosphonates against cancer cell lines}
+        \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Verse (2023)}{CLI app written in Go to fetch Bible verses by
+    requesting and parsing HTML from a website}
+    \resumeSubItem{Command line app to automate building slide deck on Google Slides (2021)}
+      {Scraped lyrics for songs from a site with song lyrics and automated putting them into Google slides via Google Slides API for a local church}
+
+  \resumeSubHeadingListEnd
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois at Urbana-Champaign}{Champaign, IL, USA}
+      {Ph.D. Chemistry}{2013 -- 2018}
+    \resumeSubheading
+      {University of California, San Diego}{La Jolla, CA, USA}
+      {B.S. Chemistry}{2008 -- 2012}
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------------
+\section{Skills}
+
+
+\resumeSubHeadingListStart
+	\resumeSubItem{Programming languages}{Python, Typescript, Go}
+	\resumeSubItem{Tools}
+	{Terraform, AWS, GitHub Actions, Git, Docker}
+   \resumeSubItem{Frameworks}
+   {React, AWS Lambda}
+   \resumeSubItem{Languages}{English (native), German (B1), Mandarin Chinese
+   (conversational)}
+\resumeSubHeadingListEnd
+
+
+%--------PUBLICATIONS------------
+% \section{Selected Pubslications}
+% %  \resumeSubHeadingListStart
+%    \textbullet{  Malwal S*, \textbf{O'Dowd B*}, et al., Bisphosphonate-Generated ATP-Analogs Inhibit Cell Signaling Pathways. \textit{J. Am. Chem. Soc.} 2018.  (*equal contribution)}\\
+%    \textbullet{\textbf{O'Dowd B}, et al., Spectroscopic and Computational Investigations of Ligand Binding to IspH: Discovery of Non-diphosphate Inhibitors. \textit{ChemBioChem}. 2017}\\
+%    \textbullet{  Nguyen, C. et al., Trapping the Dynamic Acyl Carrier Protein in Fatty Acid Biosynthesis. \textit{Nature}. 2014
+%  \resumeSubHeadingListEnd
+
+ %--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
